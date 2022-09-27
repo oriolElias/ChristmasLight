@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f21e53ed-8d08-4256-80ce-0f48b56aeffd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tdd/ChristmasLights.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tdd/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/tdd/ChristmasLightsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tdd/Pair.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tdd/ChristmasLights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tdd/ChristmasLights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/tdd/ChristmasLightsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tdd/ChristmasLightsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,22 @@
       <recent name="org.tdd" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ChristmasLightsTest">
+    <configuration name="ChristmasLightsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChristmasLight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tdd" />
+      <option name="MAIN_CLASS_NAME" value="org.tdd.ChristmasLightsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ChristmasLightsTest.turnOnOneLight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChristmasLight" />
       <extension name="coverage">
@@ -70,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChristmasLightsTest" />
         <item itemvalue="JUnit.ChristmasLightsTest.turnOnOneLight" />
       </list>
     </recent_temporary>

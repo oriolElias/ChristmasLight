@@ -16,23 +16,35 @@ class ChristmasLightsTest {
     }
 
     @Test
-    void turnOnOneLight(){
+    void turnOnAllLights(){
         Coordinate coordinate = new Coordinate(0,0);
-        int[][] actual = christmasLights.turnOnLight(coordinate,1);
+        Pair coordinates = new Pair(new Coordinate(0,0),new Coordinate(999,999));
+
+        int[][] actual = christmasLights.turnOnLight(coordinates,1);
         int[][] expected = new int[columns][rows];
 
-
-        assertArrayEquals(turnOnLight(expected,coordinate,1),actual);
+        assertArrayEquals(turnOnLights(expected,coordinates,1),actual);
 
     }
 
-    int[][] turnOnLight(int[][] expected,Coordinate coordinate, int turnValue){
+    int[][] turnOnLights(int[][] expected,Pair coordinates, int turnValue){
         for (int column = 0; column < columns; column++) {
             for (int row = 0; row < rows; row++) {
                 expected[column][row]=0;
             }
         }
-        expected[coordinate.getColumn()][coordinate.getRow()]=turnValue;
+        int upperLeftColumn = coordinates.getUpperLeft().getColumn();
+        int upperLeftRow = coordinates.getUpperLeft().getRow();
+        int downRightColumn = coordinates.getDownRight().getColumn();
+        int downRightRow = coordinates.getDownRight().getRow();
+
+        for (int column = upperLeftColumn; column < downRightColumn; column++) {
+            for (int row = upperLeftRow; row < downRightRow; row++) {
+                expected[column][row]=turnValue;
+            }
+        }
+
+
         return expected;
     }
 }

@@ -13,8 +13,19 @@ public class ChristmasLights {
         }
     }
 
-    public int[][] turnOnLight(Coordinate coordinate,int turnValue) {
-        lights[coordinate.getColumn()][coordinate.getRow()]=turnValue;
+    public int[][] turnOnLight(Pair coordinates,int turnValue) {
+
+
+        int upperLeftColumn = coordinates.getUpperLeft().getColumn();
+        int upperLeftRow = coordinates.getUpperLeft().getRow();
+        int downRightColumn = coordinates.getDownRight().getColumn();
+        int downRightRow = coordinates.getDownRight().getRow();
+
+        for (int column = upperLeftColumn; column < downRightColumn; column++) {
+            for (int row = upperLeftRow; row < downRightRow; row++) {
+                lights[column][row]=turnValue;
+            }
+        }
         return lights;
     }
 }
