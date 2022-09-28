@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f21e53ed-8d08-4256-80ce-0f48b56aeffd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tdd/Pair.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tdd/ChristmasLights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tdd/ChristmasLights.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/tdd/ChristmasLightsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tdd/ChristmasLightsTest.java" afterDir="false" />
     </list>
@@ -40,7 +40,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/traingft/Documents/GitHub/RomanNumerals"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -51,7 +52,7 @@
       <recent name="org.tdd" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChristmasLightsTest">
+  <component name="RunManager" selected="JUnit.ChristmasLightsTest.toggleTheFirstLine">
     <configuration name="ChristmasLightsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChristmasLight" />
       <extension name="coverage">
@@ -63,6 +64,38 @@
       <option name="PACKAGE_NAME" value="org.tdd" />
       <option name="MAIN_CLASS_NAME" value="org.tdd.ChristmasLightsTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChristmasLightsTest.toggleTheFirstLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChristmasLight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tdd" />
+      <option name="MAIN_CLASS_NAME" value="org.tdd.ChristmasLightsTest" />
+      <option name="METHOD_NAME" value="toggleTheFirstLine" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChristmasLightsTest.turnOnAllLights" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChristmasLight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tdd" />
+      <option name="MAIN_CLASS_NAME" value="org.tdd.ChristmasLightsTest" />
+      <option name="METHOD_NAME" value="turnOnAllLights" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,7 +118,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChristmasLightsTest.toggleTheFirstLine" />
         <item itemvalue="JUnit.ChristmasLightsTest" />
+        <item itemvalue="JUnit.ChristmasLightsTest.turnOnAllLights" />
         <item itemvalue="JUnit.ChristmasLightsTest.turnOnOneLight" />
       </list>
     </recent_temporary>

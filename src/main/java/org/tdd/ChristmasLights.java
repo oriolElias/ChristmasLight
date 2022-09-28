@@ -13,7 +13,7 @@ public class ChristmasLights {
         }
     }
 
-    public int[][] turnOnLight(Pair coordinates,int turnValue) {
+    public int[][] turnLight(Pair coordinates,int turnValue) {
 
 
         int upperLeftColumn = coordinates.getUpperLeft().getColumn();
@@ -21,11 +21,31 @@ public class ChristmasLights {
         int downRightColumn = coordinates.getDownRight().getColumn();
         int downRightRow = coordinates.getDownRight().getRow();
 
-        for (int column = upperLeftColumn; column < downRightColumn; column++) {
-            for (int row = upperLeftRow; row < downRightRow; row++) {
+        for (int column = upperLeftColumn; column <= downRightColumn; column++) {
+            for (int row = upperLeftRow; row <= downRightRow; row++) {
                 lights[column][row]=turnValue;
             }
         }
+        return lights;
+    }
+
+    public int[][] toggle(Pair coordinates){
+        int upperLeftColumn = coordinates.getUpperLeft().getColumn();
+        int upperLeftRow = coordinates.getUpperLeft().getRow();
+        int downRightColumn = coordinates.getDownRight().getColumn();
+        int downRightRow = coordinates.getDownRight().getRow();
+
+        for (int column = upperLeftColumn; column <= downRightColumn; column++) {
+            for (int row = upperLeftRow; row <= downRightRow; row++) {
+                if(lights[column][row]==0){
+                    lights[column][row]=1;
+                }else{
+                    lights[column][row]=0;
+                }
+            }
+        }
+
+
         return lights;
     }
 }
